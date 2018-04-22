@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>麦麦麦麦麦子！</title>
+    <meta name="description" content="首页" />
+</head>
+<body>
+
+<!--顶部栏-->
+{include file="common/top" /}
+<!--顶部栏结束-->
+
+<div class="left">
+    <div class="article_list">
+        {volist name="articles" id="article"}
+            <div class="article">
+                <!--文章标题-->
+                <h3><a target="_blank" href="#">{$article.title}</a></h3>
+                <!--发布时间-->
+                <!--文章简介-->
+                <!--关键词-->
+            </div>
+        {/volist}
+    </div>
+</div>
+
+<!--底部栏-->
+{include file="common/footer" /}
+<!--底部栏-->
+
+</body>
+</html>
